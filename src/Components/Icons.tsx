@@ -9,13 +9,11 @@ interface IconsProps {
 
 const Icons: React.FC<IconsProps> = ({ icons, paragraph, title }) => {
 	return (
-		<div>
-			<WrapperIconStyled>
-				{icons}
-				<h2>{title}</h2>
-				<p>{paragraph}</p>
-			</WrapperIconStyled>
-		</div>
+		<WrapperIconStyled>
+			{icons}
+			<h2>{title}</h2>
+			<p>{paragraph}</p>
+		</WrapperIconStyled>
 	)
 }
 

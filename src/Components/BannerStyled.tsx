@@ -6,16 +6,16 @@ interface BannerStyledProps {
 }
 
 const BannerStyled = styled.div<BannerStyledProps>`
-	height: ${(props) => (props.bannerHeight ? props.bannerHeight : "30vh")};
 	background-image: url(./assets/images/ocean.jpg);
+	background-size: cover;
 	background-position: center;
-
+	height: ${(props) => (props.bannerHeight ? props.bannerHeight : "30vh")};
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	width: 100vw;
-	h1 {
-	}
+	color: #fff;
+	width: 100%;
 `
 
 export default BannerStyled

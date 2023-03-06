@@ -3,10 +3,12 @@ import styled from "styled-components"
 
 const WrapperIconStyled = styled.section`
 	text-align: center;
-	width: 90%;
+	width: 20%;
+
 	svg {
-		color: #1717c0;
-		font-size: 46px;
+		font-size: 50px;
+		color: ${(props) => props.theme.color};
+		margin-bottom: 20px;
 	}
 `
 
